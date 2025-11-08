@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculadora - Teste com Jest</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Calculadora</h1>
+
+            <div class="calculator">
+                <div class="display" id="display">0</div>
+
+                <div class="inputs">
+                    <input
+                        type="number"
+                        id="numero1"
+                        placeholder="Primeiro número"
+                        step="any"
+                    />
+                    <select id="operacao">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">×</option>
+                        <option value="/">/</option>
+                    </select>
+                    <input
+                        type="number"
+                        id="numero2"
+                        placeholder="Segundo número"
+                        step="any"
+                    />
+                </div>
+
+                <button class="btn-calcular" onclick="realizarCalculo()">
+                    Calcular
+                </button>
+
+                <div class="resultado" id="resultado"></div>
+            </div>
+        </div>
+
+        <script src="calculator.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
